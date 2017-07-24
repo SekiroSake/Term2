@@ -160,7 +160,7 @@ int main()
     }
     else
     {
-      // i guess this should be done more gracefully?
+      
       res->end(nullptr, 0);
     }
   });
