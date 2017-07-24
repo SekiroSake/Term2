@@ -134,6 +134,74 @@ void UKF::Prediction(double delta_t) {
      Complete this function! Estimate the object's location. Modify the state
      vector, x_. Predict sigma points, the state, and the state covariance matrix.
      */
+    //init
+    VectorXd x_aug = VectorXd(n_aug_);
+    MatrixXd P_aug = MatrixXd(n_aug_, n_aug_);
+    MatrixXd Xsig_aug = MatrixXd(n_aug_, 2 * n_aug_ + 1);
+    x_aug.head(n_x_) = x_;
+    x_aug(5) = 0;
+    x_aug(6) = 0;
+    P_aug.fill(0.0);
+    
+    //create augmented covariance matrix
+    P_aug.topLeftCorner( n_x_, n_x_ ) = P_;
+    P_aug(5,5) = std_a_ * std_a_;
+    P_aug(6,6) = std_yawdd_ * std_yawdd_;
+    
+    //create square root matrix
+    MatrixXd A = P_aug.llt().matrixL();
+    MatrixXd root =  sqrt(lambda_ + n_aug_) * A;
+    
+    //create augmented sigma points
+    Xsig_aug.col(0) = x_aug;
+    for(int i = 0; i < n_aug_; i++){
+        Xsig_aug.col(1 + i) = x_aug + root.col(i);
+        Xsig_aug.col(1 + n_aug_ + i) = x_aug - root.col(i);
+    }
+    
+    Xsig_pred_ = MatrixXd(n_x_, 2 * n_aug_ + 1);
+    
+    double dt2 = delta_t * delta_t;
+    //Prediction loop
+    for(int i = 0; i < 2 * n_aug_ + 1; i++){
+        double px = Xsig_aug(0,i);
+        double py = Xsig_aug(1,i);
+        double v = Xsig_aug(2,i);
+        double yaw = Xsig_aug(3,i);
+        double yr = Xsig_aug(4,i);
+        double v_a = Xsig_aug(5,i);
+        double v_yr = Xsig_aug(6,i);
+        
+        //predict sigma points
+        if(fabs(yr) < 0.001){
+            Xsig_pred_(0,i) = px + v*cos(yaw)*delta_t + 0.5*dt2*cos(yaw)*v_a;
+            Xsig_pred_(1,i) = py + v*sin(yaw)*delta_t + 0.5*dt2*sin(yaw)*v_a;
+        }else{
+            Xsig_pred_(0,i) = px + (v/yr)*(sin(yaw+yr*delta_t)-sin(yaw)) + 0.5*dt2*cos(yaw)*v_a;
+            Xsig_pred_(1,i) = py + (v/yr)*(-cos(yaw+yr*delta_t)+cos(yaw)) + 0.5*dt2*sin(yaw)*v_a;
+        }
+        Xsig_pred_(2,i) = v+delta_t*v_a;
+        Xsig_pred_(3,i) = yaw+yr*delta_t + 0.5 * dt2 * v_yr;
+        Xsig_pred_(4,i) = yr+delta_t*v_yr;
+        
+        //predict state mean
+        x_ = VectorXd(5);
+        x_.fill(0.0);
+        for(int j=0; j<2*n_aug_+1; j++){
+            x_ += weights_(j) * Xsig_pred_.col(j);
+        }
+        
+        //predict state covariance matrix
+        P_ = MatrixXd(5,5);
+        P_.fill(0.0);
+        for(int j=0; j<2*n_aug_+1; j++){
+            VectorXd diff = Xsig_pred_.col(j) - x_;
+            diff(3) = Normalize(diff(3));
+            P_ += weights_(j) * diff * diff.transpose();
+        }
+        return;
+    }
+    
 }
 
 /**
@@ -164,4 +232,14 @@ void UKF::UpdateRadar(MeasurementPackage meas_package) {
      
      You'll also need to calculate the radar NIS.
      */
+    
+    
+}
+
+//Helper function
+double UKF::Normalize(double x) {
+    while(x < -M_PI) x += 2 * M_PI;
+    while(x >  M_PI) x -= 2 * M_PI;
+    
+    return x;
 }
