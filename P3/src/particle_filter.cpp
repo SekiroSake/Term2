@@ -112,7 +112,6 @@ void ParticleFilter::updateWeights(double sensor_range, double std_landmark[],
         double y_p = particles[i].y;
         double theta_p = particles[i].theta;
         
-        //Transform car observations to map coordinates supposing that the particle is the car.
         particles[i].associations.clear();
         particles[i].sense_x.clear();
         particles[i].sense_y.clear();
@@ -124,7 +123,7 @@ void ParticleFilter::updateWeights(double sensor_range, double std_landmark[],
             double o_y_map = o_x * sin(theta_p) + o_y * cos(theta_p) + y_p;
             if(pow(pow(o_x_map-x_p,2)+pow(o_y_map-y_p,2),0.5) > sensor_range) continue;
             particles[i].sense_x.push_back(o_x_map);
-            particles[i].sense_y.push_back(o_y_map);
+            
             double min_range = 1000000000;
             int min_k=-1;
             for(int k = 0; k<map_landmarks.landmark_list.size(); k++){
