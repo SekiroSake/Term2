@@ -112,6 +112,7 @@ void ParticleFilter::updateWeights(double sensor_range, double std_landmark[],
         double y_p = particles[i].y;
         double theta_p = particles[i].theta;
         
+        //Transform car observations to map coordinates supposing that the particle is the car.
         particles[i].associations.clear();
         particles[i].sense_x.clear();
         particles[i].sense_y.clear();
