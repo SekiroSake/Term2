@@ -13,9 +13,10 @@ public:
   /*
   * Coefficients
   */ 
-  double Kp;
-  double Ki;
-  double Kd;
+  //differentiate orinal param
+  double Kp_;
+  double Ki_;
+  double Kd_;
 
   /*
   * Constructor
@@ -36,6 +37,8 @@ public:
   * Update the PID error variables given cross track error.
   */
   void UpdateError(double cte);
+
+  double Signal();
 
   /*
   * Calculate the total PID error.
