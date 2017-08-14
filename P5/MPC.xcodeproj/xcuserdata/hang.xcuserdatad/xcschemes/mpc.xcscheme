@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7CF262C297404F63A2FC8DC0"
+               BlueprintIdentifier = "5EF165F85D1D4804B26C17F9"
                BuildableName = "mpc"
                BlueprintName = "mpc"
                ReferencedContainer = "container:MPC.xcodeproj">
@@ -32,7 +32,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7CF262C297404F63A2FC8DC0"
+            BlueprintIdentifier = "5EF165F85D1D4804B26C17F9"
             BuildableName = "mpc"
             BlueprintName = "mpc"
             ReferencedContainer = "container:MPC.xcodeproj">
@@ -55,7 +55,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7CF262C297404F63A2FC8DC0"
+            BlueprintIdentifier = "5EF165F85D1D4804B26C17F9"
             BuildableName = "mpc"
             BlueprintName = "mpc"
             ReferencedContainer = "container:MPC.xcodeproj">
@@ -74,7 +74,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7CF262C297404F63A2FC8DC0"
+            BlueprintIdentifier = "5EF165F85D1D4804B26C17F9"
             BuildableName = "mpc"
             BlueprintName = "mpc"
             ReferencedContainer = "container:MPC.xcodeproj">

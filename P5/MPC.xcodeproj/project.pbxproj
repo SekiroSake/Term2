@@ -7,272 +7,242 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
-		8D5A8A685D7B4BFFAB84EA9F /* ZERO_CHECK */ = {
+		2D1325E647C342C3B65B178D /* ALL_BUILD */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 7C89B363ED5C467A832E1631 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildConfigurationList = 60AF14E665F84CA88174E427 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
 			buildPhases = (
-				B2D7971E991E4EA5BFEADC06 /* CMake Rules */,
+				961A2D3F73774E20AE46C727 /* CMake Rules */,
+			);
+			dependencies = (
+				93AA45300B3443E3AE20E29E /* PBXTargetDependency */,
+				84F60D6BEFB94A71A9F1E6BA /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		52DD08A0452B4FFBAADE272C /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 3819B961B31843F39C29E067 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				047E191F91054E5291C08A69 /* CMake Rules */,
 			);
 			dependencies = (
 			);
 			name = ZERO_CHECK;
 			productName = ZERO_CHECK;
 		};
-		B834C315A2BC41109DEEE3FE /* ALL_BUILD */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = C2FA638C9F4D40558FC2A15A /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
-			buildPhases = (
-				DE56D18D8DDA4C97BF199ACB /* CMake Rules */,
-			);
-			dependencies = (
-				5D65A18DF7FB446A98FFA486 /* PBXTargetDependency */,
-				B124289A39994C4AACDCB24F /* PBXTargetDependency */,
-			);
-			name = ALL_BUILD;
-			productName = ALL_BUILD;
-		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		158FDBB291FB42EEBDC0E642 /* /Users/hang/Desktop/SelfDrivingCar__TERM2/Term2/P5/src/MPC.cpp */ = {isa = PBXBuildFile; fileRef = A5CA727ED8B0491D9117ED4C /* /Users/hang/Desktop/SelfDrivingCar__TERM2/Term2/P5/src/MPC.cpp */; settings = {COMPILER_FLAGS = ""; }; };
-		55CB02DEE0A54C079B8A4CAB /* /Users/hang/Desktop/SelfDrivingCar__TERM2/Term2/P5/src/main.cpp */ = {isa = PBXBuildFile; fileRef = 6A40BB2F789E4987B6F658C7 /* /Users/hang/Desktop/SelfDrivingCar__TERM2/Term2/P5/src/main.cpp */; settings = {COMPILER_FLAGS = ""; }; };
-		FFBD2B60BC2844E5A19891F3 /* /Users/hang/Desktop/SelfDrivingCar__TERM2/Term2/P5/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = EC2A4E290AC5474F9C2CC3EE /* /Users/hang/Desktop/SelfDrivingCar__TERM2/Term2/P5/CMakeLists.txt */; settings = {COMPILER_FLAGS = ""; }; };
+		05AEF77DE4EE465B8EB60F4D /* /Users/hang/Desktop/SelfDrivingCar__TERM2/Term2/P5/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 56FB87BA41444F3E98F189C2 /* /Users/hang/Desktop/SelfDrivingCar__TERM2/Term2/P5/CMakeLists.txt */; settings = {COMPILER_FLAGS = ""; }; };
+		25FB0E6633444CD483695AE3 /* /Users/hang/Desktop/SelfDrivingCar__TERM2/Term2/P5/src/main.cpp */ = {isa = PBXBuildFile; fileRef = 6BC6DDA42B1C49DEA000861F /* /Users/hang/Desktop/SelfDrivingCar__TERM2/Term2/P5/src/main.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		BC35E70750C641BAB16892CF /* /Users/hang/Desktop/SelfDrivingCar__TERM2/Term2/P5/src/MPC.cpp */ = {isa = PBXBuildFile; fileRef = CBDA7FA0ADE34A729C8287CB /* /Users/hang/Desktop/SelfDrivingCar__TERM2/Term2/P5/src/MPC.cpp */; settings = {COMPILER_FLAGS = ""; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildStyle section */
-		0C24143A327041AB8839A0D8 /* RelWithDebInfo */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = RelWithDebInfo;
-		};
-		49BE19C81CB146B980DDC856 = {
-			isa = PBXBuildStyle;
-		};
-		4FDAB88721A94F03BAF0FF2B /* Debug */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = Debug;
-		};
-		88A315EE4F264C8C994B9AC7 /* Release */ = {
+		00E76A6E44714609B719AEAD /* Release */ = {
 			isa = PBXBuildStyle;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 			};
 			name = Release;
 		};
-		DA98B363068045E9B1991A27 /* MinSizeRel */ = {
+		18BBDE27351F48C2AD163E19 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		379C445C68A64B1EBB676C79 /* MinSizeRel */ = {
 			isa = PBXBuildStyle;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 			};
 			name = MinSizeRel;
 		};
+		ADCB58285D614783BC3B822A = {
+			isa = PBXBuildStyle;
+		};
+		F96F8FC1EBE84953A6CADC55 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
 /* End PBXBuildStyle section */
 
 /* Begin PBXContainerItemProxy section */
-		40C05E2DC85747509A6CD3F4 /* PBXContainerItemProxy */ = {
+		BD2336EE723547519B72EABE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = BC7CDC53A369401F844BFB87 /* Project object */;
+			containerPortal = 91A933405E0F47C0A759E0C2 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 7CF262C297404F63A2FC8DC0;
+			remoteGlobalIDString = 5EF165F85D1D4804B26C17F9;
 			remoteInfo = mpc;
 		};
-		8B7B1CA572C3406E899725B5 /* PBXContainerItemProxy */ = {
+		BFB5AB342B5D4988B4E1EC7C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = BC7CDC53A369401F844BFB87 /* Project object */;
+			containerPortal = 91A933405E0F47C0A759E0C2 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8D5A8A685D7B4BFFAB84EA9F;
+			remoteGlobalIDString = 52DD08A0452B4FFBAADE272C;
 			remoteInfo = ZERO_CHECK;
 		};
-		E0D0050189C94BEA82BB2F11 /* PBXContainerItemProxy */ = {
+		E73A7DFAE3DF4E128684C487 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = BC7CDC53A369401F844BFB87 /* Project object */;
+			containerPortal = 91A933405E0F47C0A759E0C2 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8D5A8A685D7B4BFFAB84EA9F;
+			remoteGlobalIDString = 52DD08A0452B4FFBAADE272C;
 			remoteInfo = ZERO_CHECK;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0DFFAA29671C4C8F8E00FC5A /* /Users/hang/Desktop/SelfDrivingCar__TERM2/Term2/P5/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		644F68B4E3B944F0A3082708 /* mpc */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = mpc; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
-		6A40BB2F789E4987B6F658C7 /* /Users/hang/Desktop/SelfDrivingCar__TERM2/Term2/P5/src/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
-		A5CA727ED8B0491D9117ED4C /* /Users/hang/Desktop/SelfDrivingCar__TERM2/Term2/P5/src/MPC.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MPC.cpp; path = src/MPC.cpp; sourceTree = SOURCE_ROOT; };
-		A83321238C59446589D06EF5 /* /Users/hang/Desktop/SelfDrivingCar__TERM2/Term2/P5/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		EC2A4E290AC5474F9C2CC3EE /* /Users/hang/Desktop/SelfDrivingCar__TERM2/Term2/P5/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		1EBEE330B5EB43E494443292 /* mpc */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = mpc; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A888F7E64824EFF973CAFCC /* /Users/hang/Desktop/SelfDrivingCar__TERM2/Term2/P5/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		56FB87BA41444F3E98F189C2 /* /Users/hang/Desktop/SelfDrivingCar__TERM2/Term2/P5/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		6BC6DDA42B1C49DEA000861F /* /Users/hang/Desktop/SelfDrivingCar__TERM2/Term2/P5/src/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
+		CBDA7FA0ADE34A729C8287CB /* /Users/hang/Desktop/SelfDrivingCar__TERM2/Term2/P5/src/MPC.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MPC.cpp; path = src/MPC.cpp; sourceTree = SOURCE_ROOT; };
+		FC6E4B31609C4F6A9E3A71F1 /* /Users/hang/Desktop/SelfDrivingCar__TERM2/Term2/P5/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
-		2188B5616A0C4B389F8C7661 /* ALL_BUILD */ = {
+		0726720AF4D444A792D5D577 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4855ABAE6FBD4FF092C8FA20 /* CMake Rules */,
-				A83321238C59446589D06EF5 /* /Users/hang/Desktop/SelfDrivingCar__TERM2/Term2/P5/CMakeLists.txt */,
+				1EBEE330B5EB43E494443292 /* mpc */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		43BCF0BD717341CEBCE206DC /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		5EDE6E3104124813B64F59D9 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				CBDA7FA0ADE34A729C8287CB /* /Users/hang/Desktop/SelfDrivingCar__TERM2/Term2/P5/src/MPC.cpp */,
+				6BC6DDA42B1C49DEA000861F /* /Users/hang/Desktop/SelfDrivingCar__TERM2/Term2/P5/src/main.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		64592FB73B2E4322B7CAA2E7 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				43BCF0BD717341CEBCE206DC /* CMake Rules */,
+				2A888F7E64824EFF973CAFCC /* /Users/hang/Desktop/SelfDrivingCar__TERM2/Term2/P5/CMakeLists.txt */,
 			);
 			name = ALL_BUILD;
 			sourceTree = "<group>";
 		};
-		2C8B8CF4B66F4DB880F7D6AE /* Resources */ = {
+		81EC95F89B1548369BF89647 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				9A445A5B424C4F6DB3DF77DF /* mpc */,
+				64592FB73B2E4322B7CAA2E7 /* ALL_BUILD */,
+				970CB6135F9B45A59E3A4AEA /* ZERO_CHECK */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		970CB6135F9B45A59E3A4AEA /* ZERO_CHECK */ = {
+			isa = PBXGroup;
+			children = (
+				C60DFAC55A2B41F6B3B54239 /* CMake Rules */,
+				FC6E4B31609C4F6A9E3A71F1 /* /Users/hang/Desktop/SelfDrivingCar__TERM2/Term2/P5/CMakeLists.txt */,
+			);
+			name = ZERO_CHECK;
+			sourceTree = "<group>";
+		};
+		9A445A5B424C4F6DB3DF77DF /* mpc */ = {
+			isa = PBXGroup;
+			children = (
+				5EDE6E3104124813B64F59D9 /* Source Files */,
+				56FB87BA41444F3E98F189C2 /* /Users/hang/Desktop/SelfDrivingCar__TERM2/Term2/P5/CMakeLists.txt */,
+			);
+			name = mpc;
+			sourceTree = "<group>";
+		};
+		C60DFAC55A2B41F6B3B54239 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		C84FD78B378A4D8E806C4830 = {
+			isa = PBXGroup;
+			children = (
+				81EC95F89B1548369BF89647 /* Sources */,
+				F7B116F158DE42D1B45A536B /* Resources */,
+				0726720AF4D444A792D5D577 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F7B116F158DE42D1B45A536B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		4855ABAE6FBD4FF092C8FA20 /* CMake Rules */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "CMake Rules";
-			sourceTree = "<group>";
-		};
-		495873901E5045BFA61F2A68 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				644F68B4E3B944F0A3082708 /* mpc */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		568A5AC0488E49C283F66198 /* CMake Rules */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "CMake Rules";
-			sourceTree = "<group>";
-		};
-		6355AAF9465C4FE7AEA96DAD = {
-			isa = PBXGroup;
-			children = (
-				9FBAC930DB424BF895E9D238 /* Sources */,
-				2C8B8CF4B66F4DB880F7D6AE /* Resources */,
-				495873901E5045BFA61F2A68 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		74A883C436C74F8F9D423DD7 /* mpc */ = {
-			isa = PBXGroup;
-			children = (
-				CF2D60DAACA8448897666E2A /* Source Files */,
-				EC2A4E290AC5474F9C2CC3EE /* /Users/hang/Desktop/SelfDrivingCar__TERM2/Term2/P5/CMakeLists.txt */,
-			);
-			name = mpc;
-			sourceTree = "<group>";
-		};
-		9FBAC930DB424BF895E9D238 /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				74A883C436C74F8F9D423DD7 /* mpc */,
-				2188B5616A0C4B389F8C7661 /* ALL_BUILD */,
-				E472C82B495A4A33982F72BC /* ZERO_CHECK */,
-			);
-			name = Sources;
-			sourceTree = "<group>";
-		};
-		CF2D60DAACA8448897666E2A /* Source Files */ = {
-			isa = PBXGroup;
-			children = (
-				A5CA727ED8B0491D9117ED4C /* /Users/hang/Desktop/SelfDrivingCar__TERM2/Term2/P5/src/MPC.cpp */,
-				6A40BB2F789E4987B6F658C7 /* /Users/hang/Desktop/SelfDrivingCar__TERM2/Term2/P5/src/main.cpp */,
-			);
-			name = "Source Files";
-			sourceTree = "<group>";
-		};
-		E472C82B495A4A33982F72BC /* ZERO_CHECK */ = {
-			isa = PBXGroup;
-			children = (
-				568A5AC0488E49C283F66198 /* CMake Rules */,
-				0DFFAA29671C4C8F8E00FC5A /* /Users/hang/Desktop/SelfDrivingCar__TERM2/Term2/P5/CMakeLists.txt */,
-			);
-			name = ZERO_CHECK;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7CF262C297404F63A2FC8DC0 /* mpc */ = {
+		5EF165F85D1D4804B26C17F9 /* mpc */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 48DFECC8E84A476CA2443599 /* Build configuration list for PBXNativeTarget "mpc" */;
+			buildConfigurationList = C4146C0338AA4B59834217D3 /* Build configuration list for PBXNativeTarget "mpc" */;
 			buildPhases = (
-				DD93C33F77E24CD6B3BB5D9B /* Sources */,
+				46F8AEE29A67465D95C0FAA8 /* Sources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				7A3C848D002A41CD8A236832 /* PBXTargetDependency */,
+				CF6011174EA14FD1A25B2292 /* PBXTargetDependency */,
 			);
 			name = mpc;
 			productName = mpc;
-			productReference = 644F68B4E3B944F0A3082708 /* mpc */;
+			productReference = 1EBEE330B5EB43E494443292 /* mpc */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		BC7CDC53A369401F844BFB87 /* Project object */ = {
+		91A933405E0F47C0A759E0C2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 0830;
 			};
-			buildConfigurationList = AB14D7AD72AC46738EFA3209 /* Build configuration list for PBXProject "MPC" */;
+			buildConfigurationList = 6C8A5B05AE784D2CA4803A99 /* Build configuration list for PBXProject "MPC" */;
 			buildSettings = {
 			};
 			buildStyles = (
-				4FDAB88721A94F03BAF0FF2B /* Debug */,
-				88A315EE4F264C8C994B9AC7 /* Release */,
-				DA98B363068045E9B1991A27 /* MinSizeRel */,
-				0C24143A327041AB8839A0D8 /* RelWithDebInfo */,
+				F96F8FC1EBE84953A6CADC55 /* Debug */,
+				00E76A6E44714609B719AEAD /* Release */,
+				379C445C68A64B1EBB676C79 /* MinSizeRel */,
+				18BBDE27351F48C2AD163E19 /* RelWithDebInfo */,
 			);
 			compatibilityVersion = "Xcode 3.2";
 			hasScannedForEncodings = 0;
-			mainGroup = 6355AAF9465C4FE7AEA96DAD;
+			mainGroup = C84FD78B378A4D8E806C4830;
 			projectDirPath = .;
 			projectRoot = "";
 			targets = (
-				B834C315A2BC41109DEEE3FE /* ALL_BUILD */,
-				8D5A8A685D7B4BFFAB84EA9F /* ZERO_CHECK */,
-				7CF262C297404F63A2FC8DC0 /* mpc */,
+				2D1325E647C342C3B65B178D /* ALL_BUILD */,
+				52DD08A0452B4FFBAADE272C /* ZERO_CHECK */,
+				5EF165F85D1D4804B26C17F9 /* mpc */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		67F24BC283424CE888A575B2 = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# shell script goes here
-exit 0";
-			showEnvVarsInLog = 0;
-		};
-		7141EAF947FB4556B00F0980 = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# shell script goes here
-exit 0";
-			showEnvVarsInLog = 0;
-		};
-		B2D7971E991E4EA5BFEADC06 /* CMake Rules */ = {
+		047E191F91054E5291C08A69 /* CMake Rules */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -283,7 +253,37 @@ exit 0";
 			shellScript = "make -C /Users/hang/Desktop/SelfDrivingCar__TERM2/Term2/P5 -f /Users/hang/Desktop/SelfDrivingCar__TERM2/Term2/P5/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
 			showEnvVarsInLog = 0;
 		};
-		DE56D18D8DDA4C97BF199ACB /* CMake Rules */ = {
+		7B8EF0099C9240DD9E76C33C = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		8F50DA19579D45BFB835187F = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		961A2D3F73774E20AE46C727 /* CMake Rules */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -297,37 +297,37 @@ exit 0";
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		DD93C33F77E24CD6B3BB5D9B /* Sources */ = {
+		46F8AEE29A67465D95C0FAA8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				158FDBB291FB42EEBDC0E642 /* /Users/hang/Desktop/SelfDrivingCar__TERM2/Term2/P5/src/MPC.cpp */,
-				55CB02DEE0A54C079B8A4CAB /* /Users/hang/Desktop/SelfDrivingCar__TERM2/Term2/P5/src/main.cpp */,
+				BC35E70750C641BAB16892CF /* /Users/hang/Desktop/SelfDrivingCar__TERM2/Term2/P5/src/MPC.cpp */,
+				25FB0E6633444CD483695AE3 /* /Users/hang/Desktop/SelfDrivingCar__TERM2/Term2/P5/src/main.cpp */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5D65A18DF7FB446A98FFA486 /* PBXTargetDependency */ = {
+		84F60D6BEFB94A71A9F1E6BA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8D5A8A685D7B4BFFAB84EA9F /* ZERO_CHECK */;
-			targetProxy = E0D0050189C94BEA82BB2F11 /* PBXContainerItemProxy */;
+			target = 52DD08A0452B4FFBAADE272C /* ZERO_CHECK */;
+			targetProxy = E73A7DFAE3DF4E128684C487 /* PBXContainerItemProxy */;
 		};
-		7A3C848D002A41CD8A236832 /* PBXTargetDependency */ = {
+		93AA45300B3443E3AE20E29E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8D5A8A685D7B4BFFAB84EA9F /* ZERO_CHECK */;
-			targetProxy = 8B7B1CA572C3406E899725B5 /* PBXContainerItemProxy */;
+			target = 5EF165F85D1D4804B26C17F9 /* mpc */;
+			targetProxy = BD2336EE723547519B72EABE /* PBXContainerItemProxy */;
 		};
-		B124289A39994C4AACDCB24F /* PBXTargetDependency */ = {
+		CF6011174EA14FD1A25B2292 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7CF262C297404F63A2FC8DC0 /* mpc */;
-			targetProxy = 40C05E2DC85747509A6CD3F4 /* PBXContainerItemProxy */;
+			target = 52DD08A0452B4FFBAADE272C /* ZERO_CHECK */;
+			targetProxy = BFB5AB342B5D4988B4E1EC7C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1D2E04A42C7447B9AE9A6B53 /* Debug */ = {
+		184D3BAE90214D55B40C7D1A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -345,40 +345,10 @@ exit 0";
 				SYMROOT = /Users/hang/Desktop/SelfDrivingCar__TERM2/Term2/P5;
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
-			};
-			name = Debug;
-		};
-		590BF76AF271403B86800E80 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk;
-				SYMROOT = /Users/hang/Desktop/SelfDrivingCar__TERM2/Term2/P5/build;
 			};
 			name = Release;
 		};
-		5B3AB0EBF0544FFBAC2B065D /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/usr/local/include, "/Users/hang/Desktop/SelfDrivingCar__TERM2/Term2/P5/src/Eigen-3.3", /usr/local/opt/openssl/include, );
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/hang/Desktop/SelfDrivingCar__TERM2/Term2/P5;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
-			};
-			name = MinSizeRel;
-		};
-		72E898ECC07D4FFFA3DC964E /* RelWithDebInfo */ = {
+		294CC28BC6B64CDAA4179BD3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -397,9 +367,39 @@ exit 0";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
 			};
-			name = RelWithDebInfo;
+			name = Release;
 		};
-		75145AD46DF249E680AA7DBC /* MinSizeRel */ = {
+		3280997AB5004CB795956192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk;
+				SYMROOT = /Users/hang/Desktop/SelfDrivingCar__TERM2/Term2/P5/build;
+			};
+			name = Release;
+		};
+		39C632BAF60944D3B4E143FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include, "/Users/hang/Desktop/SelfDrivingCar__TERM2/Term2/P5/src/Eigen-3.3", /usr/local/opt/openssl/include, );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hang/Desktop/SelfDrivingCar__TERM2/Term2/P5;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Debug;
+		};
+		6D04A83B9CDB46FEB50C0865 /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -425,7 +425,7 @@ exit 0";
 			};
 			name = MinSizeRel;
 		};
-		870700ABF6BA4C1A98F3E229 /* Release */ = {
+		7EE1620DA4FE495F8FB34CD1 /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -444,44 +444,9 @@ exit 0";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
 			};
-			name = Release;
-		};
-		8A40348529CE45A1B5764314 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk;
-				SYMROOT = /Users/hang/Desktop/SelfDrivingCar__TERM2/Term2/P5/build;
-			};
 			name = RelWithDebInfo;
 		};
-		8AD750CC0C84484CA0611CAB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/usr/local/include, "/Users/hang/Desktop/SelfDrivingCar__TERM2/Term2/P5/src/Eigen-3.3", /usr/local/opt/openssl/include, );
-				INSTALL_PATH = "";
-				LD_RUNPATH_SEARCH_PATHS = "/usr/local/lib /usr/local/opt/openssl/lib /usr/local/Cellar/libuv/1.11.0/lib";
-				LIBRARY_SEARCH_PATHS = " /usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/lib /usr/local/opt/openssl/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/opt/openssl/lib /usr/local/Cellar/libuv/1.11.0/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/Cellar/libuv/1.11.0/lib";
-				OTHER_CPLUSPLUSFLAGS = "-Wall      -std=c++11 -O3";
-				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -lipopt -lz -lssl -luv -luWS";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = mpc;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/hang/Desktop/SelfDrivingCar__TERM2/Term2/P5;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
-			};
-			name = Debug;
-		};
-		8B06968FEBC549B6AEE11B91 /* Release */ = {
+		8530AD8E97D34449A1AE2C6B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -507,67 +472,7 @@ exit 0";
 			};
 			name = Release;
 		};
-		906C4E7CCAA04C7C8439C3C6 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk;
-				SYMROOT = /Users/hang/Desktop/SelfDrivingCar__TERM2/Term2/P5/build;
-			};
-			name = MinSizeRel;
-		};
-		92F2955D5DF848808133376C /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/usr/local/include, "/Users/hang/Desktop/SelfDrivingCar__TERM2/Term2/P5/src/Eigen-3.3", /usr/local/opt/openssl/include, );
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/hang/Desktop/SelfDrivingCar__TERM2/Term2/P5;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
-			};
-			name = RelWithDebInfo;
-		};
-		9F0B51506CCB4E3B9A444087 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/usr/local/include, "/Users/hang/Desktop/SelfDrivingCar__TERM2/Term2/P5/src/Eigen-3.3", /usr/local/opt/openssl/include, );
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/hang/Desktop/SelfDrivingCar__TERM2/Term2/P5;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
-			};
-			name = Debug;
-		};
-		A1D841C473DA4A6F83ACE32C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk;
-				SYMROOT = /Users/hang/Desktop/SelfDrivingCar__TERM2/Term2/P5/build;
-			};
-			name = Debug;
-		};
-		B00C6A0156AB474494499329 /* RelWithDebInfo */ = {
+		861C5FF069A84A578C90E3F5 /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -593,7 +498,97 @@ exit 0";
 			};
 			name = RelWithDebInfo;
 		};
-		B23F54D14A624828ACDC71FE /* MinSizeRel */ = {
+		9842EB8178E143F1BF720DC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include, "/Users/hang/Desktop/SelfDrivingCar__TERM2/Term2/P5/src/Eigen-3.3", /usr/local/opt/openssl/include, );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hang/Desktop/SelfDrivingCar__TERM2/Term2/P5;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Debug;
+		};
+		9924A23F2F83499091732CC8 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include, "/Users/hang/Desktop/SelfDrivingCar__TERM2/Term2/P5/src/Eigen-3.3", /usr/local/opt/openssl/include, );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hang/Desktop/SelfDrivingCar__TERM2/Term2/P5;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = RelWithDebInfo;
+		};
+		9B19F05C237B4B2087880506 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include, "/Users/hang/Desktop/SelfDrivingCar__TERM2/Term2/P5/src/Eigen-3.3", /usr/local/opt/openssl/include, );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hang/Desktop/SelfDrivingCar__TERM2/Term2/P5;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = MinSizeRel;
+		};
+		B72A00A6541F4EA4B7E4FF44 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk;
+				SYMROOT = /Users/hang/Desktop/SelfDrivingCar__TERM2/Term2/P5/build;
+			};
+			name = RelWithDebInfo;
+		};
+		B7D0DD8B74D74FE2AEABD0F7 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk;
+				SYMROOT = /Users/hang/Desktop/SelfDrivingCar__TERM2/Term2/P5/build;
+			};
+			name = MinSizeRel;
+		};
+		BB7CD081801A4678B35A8CC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk;
+				SYMROOT = /Users/hang/Desktop/SelfDrivingCar__TERM2/Term2/P5/build;
+			};
+			name = Debug;
+		};
+		DD92B8518C9D4FF1AB31184F /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -614,10 +609,12 @@ exit 0";
 			};
 			name = MinSizeRel;
 		};
-		CE71FAAEA1C146F696FCA639 /* Release */ = {
+		FA43C1C86CA9470D94229931 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -625,64 +622,67 @@ exit 0";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (/usr/local/include, "/Users/hang/Desktop/SelfDrivingCar__TERM2/Term2/P5/src/Eigen-3.3", /usr/local/opt/openssl/include, );
 				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
+				LD_RUNPATH_SEARCH_PATHS = "/usr/local/lib /usr/local/opt/openssl/lib /usr/local/Cellar/libuv/1.11.0/lib";
+				LIBRARY_SEARCH_PATHS = " /usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/lib /usr/local/opt/openssl/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/opt/openssl/lib /usr/local/Cellar/libuv/1.11.0/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/Cellar/libuv/1.11.0/lib";
+				OTHER_CPLUSPLUSFLAGS = "-Wall      -std=c++11 -O3";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -lipopt -lz -lssl -luv -luWS";
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
+				PRODUCT_NAME = mpc;
 				SECTORDER_FLAGS = "";
 				SYMROOT = /Users/hang/Desktop/SelfDrivingCar__TERM2/Term2/P5;
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
 			};
-			name = Release;
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		48DFECC8E84A476CA2443599 /* Build configuration list for PBXNativeTarget "mpc" */ = {
+		3819B961B31843F39C29E067 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8AD750CC0C84484CA0611CAB /* Debug */,
-				8B06968FEBC549B6AEE11B91 /* Release */,
-				75145AD46DF249E680AA7DBC /* MinSizeRel */,
-				B00C6A0156AB474494499329 /* RelWithDebInfo */,
+				39C632BAF60944D3B4E143FA /* Debug */,
+				184D3BAE90214D55B40C7D1A /* Release */,
+				9B19F05C237B4B2087880506 /* MinSizeRel */,
+				9924A23F2F83499091732CC8 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		7C89B363ED5C467A832E1631 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+		60AF14E665F84CA88174E427 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1D2E04A42C7447B9AE9A6B53 /* Debug */,
-				CE71FAAEA1C146F696FCA639 /* Release */,
-				5B3AB0EBF0544FFBAC2B065D /* MinSizeRel */,
-				92F2955D5DF848808133376C /* RelWithDebInfo */,
+				9842EB8178E143F1BF720DC6 /* Debug */,
+				294CC28BC6B64CDAA4179BD3 /* Release */,
+				DD92B8518C9D4FF1AB31184F /* MinSizeRel */,
+				7EE1620DA4FE495F8FB34CD1 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		AB14D7AD72AC46738EFA3209 /* Build configuration list for PBXProject "MPC" */ = {
+		6C8A5B05AE784D2CA4803A99 /* Build configuration list for PBXProject "MPC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A1D841C473DA4A6F83ACE32C /* Debug */,
-				590BF76AF271403B86800E80 /* Release */,
-				906C4E7CCAA04C7C8439C3C6 /* MinSizeRel */,
-				8A40348529CE45A1B5764314 /* RelWithDebInfo */,
+				BB7CD081801A4678B35A8CC2 /* Debug */,
+				3280997AB5004CB795956192 /* Release */,
+				B7D0DD8B74D74FE2AEABD0F7 /* MinSizeRel */,
+				B72A00A6541F4EA4B7E4FF44 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		C2FA638C9F4D40558FC2A15A /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+		C4146C0338AA4B59834217D3 /* Build configuration list for PBXNativeTarget "mpc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9F0B51506CCB4E3B9A444087 /* Debug */,
-				870700ABF6BA4C1A98F3E229 /* Release */,
-				B23F54D14A624828ACDC71FE /* MinSizeRel */,
-				72E898ECC07D4FFFA3DC964E /* RelWithDebInfo */,
+				FA43C1C86CA9470D94229931 /* Debug */,
+				8530AD8E97D34449A1AE2C6B /* Release */,
+				6D04A83B9CDB46FEB50C0865 /* MinSizeRel */,
+				861C5FF069A84A578C90E3F5 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = BC7CDC53A369401F844BFB87 /* Project object */;
+	rootObject = 91A933405E0F47C0A759E0C2 /* Project object */;
 }
