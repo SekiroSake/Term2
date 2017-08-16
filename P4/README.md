@@ -9,6 +9,12 @@ To adjust the steer angle, a PID(Proportional, Integral, Derivative) controller 
 - I as integral, which is the accumulates the cte impact over the past time. After a few cycles, the gained value from I-value will correct the bias the car is showing.
 - D as derivative, which is used to calibrate the oscillation as P-value changes.
 
+## Twiddle
+The controller was tuned by twiddle as explained by Dr.Thrun in the learning material using python. 
+Twiddle is an algorithm that returns the ideal p-value which can minimize the average CTE. The twiddle algorithm is started from the original parameter array with its corresponding potential change value. Based on the first error as the best error, the twiddle continues to make the error smaller by looping through the parameter array with different p-value change(both positive and negative).
+I reimplemented this method in c++ and it works as expected.
+
+
 
 ## Dependencies
 
