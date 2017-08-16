@@ -2,6 +2,9 @@
 Self-Driving Car Engineer Nanodegree Program
 
 ---
+# *Project description*
+## PID control
+To adjust the steer angle, a PID(Proportional, Integral, Derivative) controller which was introduced in the learning material is used here. The output value is the steering value(ranges between -1 and 1) and the input value is the CTE.
 
 ## Dependencies
 
