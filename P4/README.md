@@ -5,13 +5,16 @@ Self-Driving Car Engineer Nanodegree Program
 # *PID control Project questions*
 ## PID definition and implementation
 To adjust the steer angle, a PID(Proportional, Integral, Derivative) controller which was introduced in the learning material is used here. The output value is the steering angle value(ranges between -1 and 1) and the input value is the CTE(cross-track error).
+
 - P as proportional, means the output is proportional to the CTE. CTE describes the degree of the veachle that deviated from the center of the road. If the CTE is high, then a big steering angle is expected for the car to go back.
 - I as integral, which is the accumulates the cte impact over the past time. After a few cycles, the gained value from I-value will correct the bias the car is showing.
 - D as derivative, which is used to calibrate the oscillation as P-value changes.
 
 ## Twiddle
 The controller was tuned by twiddle as explained by Dr.Thrun in the learning material using python. 
+
 Twiddle is an algorithm that returns the ideal p-value which can minimize the average CTE. The twiddle algorithm is started from the original parameter array with its corresponding potential change value. Based on the first error as the best error, the twiddle continues to make the error smaller by looping through the parameter array with different p-value change(both positive and negative).
+
 I reimplemented this method in c++ and it works as expected.
 
 
